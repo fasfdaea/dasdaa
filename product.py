@@ -43,7 +43,7 @@ class Product:
         print(f"Склад пополнен на {amount} шт. товара «{self.name}».")
 
 
-# Создаём минимум три объекта класса Product.
+
 products = [
     Product("Книга", 750.00, 12),
     Product("Настольная лампа", 2490.00, 5),
@@ -55,7 +55,7 @@ if __name__ == "__main__":
         product.show_info()
 
     products[0].buy(2)
-    products[1].buy(10)  # Неудачная покупка: товара недостаточно.
+    products[1].buy(10) 
     products[2].replenish(5)
 
     print("\nСостояние склада после операций:")
